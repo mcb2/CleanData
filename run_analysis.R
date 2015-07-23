@@ -42,6 +42,6 @@ names(data) <- gsub("-mean\\(\\)", "Mean",names(data))
 names(data) <- gsub("BodyBody", "Body",names(data))
 
 dataAverages <- summarise_each(group_by(data, Subject, Activity), funs(mean))
-write.table(dataAverages, file = "dateAverages.txt", row.name = FALSE) 
+write.table(dataAverages, file = "data_averages.txt", row.name = FALSE) 
 
 
