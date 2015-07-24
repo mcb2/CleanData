@@ -39,6 +39,8 @@ data$Subject <- as.factor(subjects)
 ## Improve the variable names
 names(data) <- gsub("-std\\(\\)", "StdDev",names(data))
 names(data) <- gsub("-mean\\(\\)", "Mean",names(data))
+names(data) <- gsub("Acc", "Acceleration",names(data))
+names(data) <- gsub("Mag", "Magnitude",names(data))
 names(data) <- gsub("BodyBody", "Body",names(data))
 
 dataAverages <- summarise_each(group_by(data, Subject, Activity), funs(mean))
