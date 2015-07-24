@@ -1,4 +1,9 @@
 
+The raw data from the training and test sets was combined.  Then the Subject and Activity variables were added.  Next all variables except for those for mean and standard deviation of measurements were removed.  Then the remaining variable names were cleaned up.  Finally, a tidy data set with the average of each variable for each activity and each subject was created
+
+The test subject identifier was transformed to a factor Subject identified by a number (1-30).
+The activity for each sample was transformed to a factor Activity with the levels LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+
 "Subject"
 "Activity"
 "tBodyAccMean-X"
